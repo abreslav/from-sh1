@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def hello_world(request):
+    """Display the HelloWorld greeting page."""
+    return render(request, 'django_app/hello.html')
